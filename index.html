@@ -2,99 +2,97 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Jones alias Pragya Rakshaka Dharma</title>
   <style>
     body {
+      margin: 0;
+      font-family: sans-serif;
       background-color: #111;
-      color: #eee;
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
+      color: #f4f4f4;
     }
 
-    header {
-      padding: 40px 20px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 2em;
-      margin: 0;
-      color: #ffc107;
+    .video-container {
+      position: relative;
+      width: 100%;
+      max-height: 90vh;
+      overflow: hidden;
     }
 
     video {
-      display: block;
-      margin: 20px auto;
-      max-width: 100%;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .title-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-size: 2.5rem;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 1rem 2rem;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      max-width: 250px;
       height: auto;
       border-radius: 10px;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.7);
+      object-fit: cover;
     }
 
     audio {
-      display: block;
-      margin: 20px auto;
-      width: 300px;
-    }
-
-    .image-row {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 20px;
-      margin: 30px auto;
-      max-width: 1000px;
-      padding: 0 10px;
-    }
-
-    .image-row img {
-      width: 300px;
-      height: auto;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
-    }
-
-    .narasi {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
-      line-height: 1.7;
-      text-align: justify;
-    }
-
-    h2 {
-      text-align: center;
-      color: #ffdd57;
-      margin-top: 40px;
+      display: none;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Jones alias Pragya Rakshaka Dharma</h1>
-  </header>
-
-  <video autoplay muted loop playsinline>
-    <source src="bahlil.mp4" type="video/mp4" />
-    Browser Anda tidak mendukung tag video.
-  </video>
-
+  <!-- Pemutar Musik -->
   <audio autoplay loop>
-    <source src="DJ-Gamelan.mp3" type="audio/mpeg" />
-    Browser Anda tidak mendukung audio.
+    <source src="DJ-Gamelan.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
   </audio>
 
-  <div class="image-row">
-    <img src="bahlil-1.jpg" alt="Jones bekerja 1" />
-    <img src="bahlil-2.jpg" alt="Jones bekerja 2" />
-    <img src="bahlil-3.jpg" alt="Jones bekerja 3" />
+  <!-- Video dengan Judul Overlay -->
+  <div class="video-container">
+    <video autoplay loop muted playsinline>
+      <source src="bahlil.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="title-overlay">
+      Jones alias Pragya Rakshaka Dharma<br />
+      Sang Penjaga Warisan Prambanan
+    </div>
   </div>
 
-  <div class="narasi">
-    <h2>Sejarah Singkat</h2>
+  <!-- Gambar -->
+  <div class="gallery">
+    <img src="bahlil-1.jpg" alt="Jones 1" />
+    <img src="bahlil-2.jpg" alt="Jones 2" />
+    <img src="bahlil-3.jpg" alt="Jones 3" />
+  </div>
+
+  <!-- Narasi -->
+  <div class="content">
     <p>
       Lahir di Pulau Banda pada tahun 1874, Jones—yang kemudian dikenal dengan nama kehormatan Pragya Rakshaka Dharma—adalah salah satu tokoh penting dalam sejarah arkeologi Indonesia. Nama "Pragya Rakshaka Dharma" yang berarti "Penjaga Kebajikan Pengetahuan", diberikan oleh gurunya di Hindia Belanda sebagai bentuk penghormatan atas dedikasinya dalam melestarikan warisan budaya nusantara.
     </p>
