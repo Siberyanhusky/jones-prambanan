@@ -71,8 +71,8 @@
 </head>
 <body>
 
-  <!-- Audio autoplay -->
-  <audio autoplay loop>
+  <!-- Audio autoplay setelah klik -->
+  <audio id="bg-audio" loop>
     <source src="DJ_Gamelan_Slow.mp3" type="audio/mpeg" />
   </audio>
 
@@ -104,6 +104,18 @@
 
     <p>Warisan Jones alias Pragya Rakshaka Dharma tidak hanya terpatri di Prambanan, tetapi juga dalam generasi arkeolog Indonesia yang terinspirasi oleh semangatnya. Ia wafat pada tahun 1951, namun hingga kini dikenang sebagai <strong>“Sang Penjaga Prambanan”</strong>.</p>
   </div>
+  
+<script>
+  // Tunggu sampai halaman dimuat
+  window.addEventListener('DOMContentLoaded', () => {
+    const audio = document.getElementById('bg-audio');
+
+    // Saat pengguna klik di mana pun di halaman, audio akan mulai
+    document.body.addEventListener('click', () => {
+      audio.play();
+    }, { once: true }); // Hanya butuh 1 klik
+  });
+</script>
 
 </body>
 </html>
