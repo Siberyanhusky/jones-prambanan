@@ -1,29 +1,29 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jones alias Pragya Rakshaka Dharma</title>
+  <title>Pragya Rakshaka Dharma</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body, html {
       margin: 0;
       padding: 0;
-      height: 100%;
-      font-family: Arial, sans-serif;
-      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      color: #222;
+    }
+
+    .video-section {
+      position: relative;
+      height: 100vh;
       overflow: hidden;
     }
 
-    .video-background {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      z-index: -1;
-      overflow: hidden;
-    }
-
-    .video-background video {
+    video {
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -31,20 +31,37 @@
 
     .overlay {
       position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background-color: rgba(0, 0, 0, 0.4); /* Transparansi gelap */
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4);
       display: flex;
       align-items: center;
       justify-content: center;
+      color: white;
       text-align: center;
       padding: 2rem;
-      box-sizing: border-box;
     }
 
     .overlay h1 {
-      font-size: 2.8rem;
-      text-shadow: 2px 2px 10px black;
+      font-size: 2.5rem;
+      line-height: 1.3;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+    }
+
+    .content {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.8;
+      font-size: 1.05rem;
+    }
+
+    .content img {
+      width: 100%;
+      margin: 1rem 0;
+      border-radius: 8px;
     }
 
     audio {
@@ -54,58 +71,39 @@
 </head>
 <body>
 
-  <!-- Musik -->
+  <!-- Audio autoplay -->
   <audio autoplay loop>
-    <source src="DJ_Gamelan_Slow.mp3" type="audio/mpeg">
+    <source src="DJ_Gamelan_Slow.mp3" type="audio/mpeg" />
   </audio>
 
-  <!-- Video -->
-  <div class="video-background">
+  <!-- Video Background -->
+  <div class="video-section">
     <video autoplay muted loop>
-      <source src="Bahlil.mp4" type="video/mp4">
+      <source src="Bahlil.mp4" type="video/mp4" />
     </video>
+    <div class="overlay">
+      <h1>Jones alias Pragya Rakshaka Dharma<br><small>Sang Penjaga Warisan Prambanan</small></h1>
+    </div>
   </div>
-
-  <!-- Overlay Text -->
-  <div class="overlay">
-    <h1>Jones alias <br> <span style="color: #ffd700;">Pragya Rakshaka Dharma</span><br><small>Sang Penjaga Warisan Prambanan</small></h1>
-  </div>
-
-</body>
-</html>
 
   <!-- Narasi Sejarah -->
-  <section class="narrative">
-    <div class="content">
-      <h2>Kisah Hidup</h2>
-      <p>
-        Lahir di Pulau Banda pada tahun 1874, Jones—yang kemudian dikenal dengan nama kehormatan <strong>Pragya Rakshaka Dharma</strong>—adalah salah satu tokoh penting dalam sejarah arkeologi Indonesia. Nama <em>"Pragya Rakshaka Dharma"</em> yang berarti "Penjaga Kebajikan Pengetahuan", diberikan oleh gurunya di Hindia Belanda sebagai bentuk penghormatan atas dedikasinya dalam melestarikan warisan budaya nusantara.
-      </p>
-      <p>
-        Sejak muda, Jones menunjukkan minat besar terhadap sejarah dan peninggalan kuno. Ia sering mengamati reruntuhan benteng Portugis di Banda dan mengumpulkan cerita-cerita rakyat tentang masa lampau. Minat ini membawanya merantau ke Jawa, di mana ia bergabung dengan tim arkeologi yang dipimpin oleh arkeolog Belanda.
-      </p>
-      <p>
-        Pada awal abad ke-20, saat proyek besar rekonstruksi Candi Prambanan dimulai, Jones menjadi satu-satunya arkeolog pribumi yang dipercaya terlibat langsung. Ia bukan sekadar asisten; kontribusinya dalam membaca naskah-naskah kuno, memahami struktur simbolik arsitektur Jawa-Hindu, serta keahliannya dalam mendokumentasikan artefak, menjadikannya tokoh kunci di lapangan. Jones dikenal sangat teliti mencatat setiap detail relief dan struktur batu, sambil mengenakan batik tradisional sebagai simbol identitasnya.
-      </p>
-      <p>
-        Dedikasi Jones tidak hanya terbatas pada teknis arkeologi. Ia sering terlibat dalam dialog dengan masyarakat sekitar, menghimpun cerita rakyat dan tradisi lisan yang berkaitan dengan Prambanan, menjadikannya jembatan antara ilmu arkeologi modern dengan kearifan lokal.
-      </p>
-      <p>
-        Namun, perjalanannya tidak selalu mulus. Sebagai arkeolog pribumi di tengah dominasi kolonial, ia kerap menghadapi diskriminasi dan dipandang sebelah mata. Tetapi keteguhan dan kecerdasannya perlahan diakui. Pada tahun 1923, ia diangkat sebagai “Kepala Seksi Dokumentasi Lapangan” dalam proyek Prambanan, sebuah jabatan yang jarang diberikan kepada kaum pribumi pada masa itu.
-      </p>
-      <p>
-        Warisan Jones alias Pragya Rakshaka Dharma tidak hanya terpatri di Prambanan, tetapi juga dalam generasi arkeolog Indonesia yang terinspirasi oleh semangatnya. Ia wafat pada tahun 1951, namun hingga kini dikenang sebagai <em>“Sang Penjaga Prambanan”</em>.
-      </p>
-    </div>
+  <div class="content">
+    <p><strong>Lahir di Pulau Banda pada tahun 1874</strong>, Jones—yang kemudian dikenal dengan nama kehormatan Pragya Rakshaka Dharma—adalah salah satu tokoh penting dalam sejarah arkeologi Indonesia. Nama <em>"Pragya Rakshaka Dharma"</em> yang berarti <strong>"Penjaga Kebajikan Pengetahuan"</strong>, diberikan oleh gurunya di Hindia Belanda sebagai bentuk penghormatan atas dedikasinya dalam melestarikan warisan budaya nusantara.</p>
 
-    <!-- Galeri Gambar -->
-    <div class="gallery">
-      <h3>Dokumentasi Lapangan</h3>
-      <img src="/Bahlil%201.jpeg" alt="Jones mencatat di situs Prambanan" />
-      <img src="/Bahlil%202.jpeg" alt="Jones mencermati arsitektur candi" />
-      <img src="/Bahlil%203.jpeg" alt="Jones bekerja di reruntuhan" />
-    </div>
-  </section>
+    <p>Sejak muda, Jones menunjukkan minat besar terhadap sejarah dan peninggalan kuno. Ia sering mengamati reruntuhan benteng Portugis di Banda dan mengumpulkan cerita-cerita rakyat tentang masa lampau. Minat ini membawanya merantau ke Jawa, di mana ia bergabung dengan tim arkeologi yang dipimpin oleh arkeolog Belanda.</p>
+
+    <p>Pada awal abad ke-20, saat proyek besar rekonstruksi Candi Prambanan dimulai, Jones menjadi satu-satunya arkeolog pribumi yang dipercaya terlibat langsung. Ia bukan sekadar asisten; kontribusinya dalam membaca naskah-naskah kuno, memahami struktur simbolik arsitektur Jawa-Hindu, serta keahliannya dalam mendokumentasikan artefak, menjadikannya tokoh kunci di lapangan. Jones dikenal sangat teliti mencatat setiap detail relief dan struktur batu, sambil mengenakan batik tradisional sebagai simbol identitasnya.</p>
+
+    <img src="Bahlil 1.jpeg" alt="Jones di Prambanan" />
+    <img src="Bahlil 2.jpeg" alt="Jones mendokumentasi artefak" />
+    <img src="Bahlil 3.jpeg" alt="Jones dalam ekskavasi" />
+
+    <p>Dedikasi Jones tidak hanya terbatas pada teknis arkeologi. Ia sering terlibat dalam dialog dengan masyarakat sekitar, menghimpun cerita rakyat dan tradisi lisan yang berkaitan dengan Prambanan, menjadikannya jembatan antara ilmu arkeologi modern dengan kearifan lokal.</p>
+
+    <p>Namun, perjalanannya tidak selalu mulus. Sebagai arkeolog pribumi di tengah dominasi kolonial, ia kerap menghadapi diskriminasi dan dipandang sebelah mata. Tetapi keteguhan dan kecerdasannya perlahan diakui. Pada tahun 1923, ia diangkat sebagai <strong>“Kepala Seksi Dokumentasi Lapangan”</strong> dalam proyek Prambanan, sebuah jabatan yang jarang diberikan kepada kaum pribumi pada masa itu.</p>
+
+    <p>Warisan Jones alias Pragya Rakshaka Dharma tidak hanya terpatri di Prambanan, tetapi juga dalam generasi arkeolog Indonesia yang terinspirasi oleh semangatnya. Ia wafat pada tahun 1951, namun hingga kini dikenang sebagai <strong>“Sang Penjaga Prambanan”</strong>.</p>
+  </div>
 
 </body>
 </html>
