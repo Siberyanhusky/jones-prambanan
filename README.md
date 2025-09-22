@@ -1,22 +1,20 @@
+# 🌸 The Summer I Turned Team Conrad (Romantic Web)
 
-# Jones alias Pragya Rakshaka Dharma
+Sebuah web sederhana bernuansa romantis, terinspirasi dari tema musim panas dan kisah cinta yang penuh nuansa emosional. Dibuat dengan **HTML + CSS + JavaScript** murni (tanpa framework eksternal) agar ringan, responsif, dan mudah di-deploy ke platform seperti **Vercel**, **Netlify**, atau **GitHub Pages**.
 
-Sebuah website penghormatan untuk Jones alias *Pragya Rakshaka Dharma*, arkeolog pribumi pertama yang menjadi bagian penting dalam restorasi Candi Prambanan.
+Proyek ini menampilkan narasi puitis berbentuk surat cinta, latar belakang gambar romantis, musik latar opsional, dan desain minimalis yang fokus pada pengalaman emosional.
 
-## Fitur
+---
 
-- Video latar otomatis dan loop
-- Musik tradisional Jawa autoplay
-- Narasi sejarah lengkap
-- Galeri dokumentasi Jones di lapangan
+## ✨ Fitur
+- **Header Elegan**: Judul besar dengan kutipan romantis ("The moon is beautiful, isn’t it?") yang menambah nuansa puitis.
+- **Latar Belakang Immersive**: Wallpaper gambar (misalnya `wallpaper-love.jpg`) yang mencakup seluruh halaman, dengan overlay transparan untuk teks agar mudah dibaca.
+- **Narasi Surat Cinta**: Teks berbentuk surat pribadi (dari "Beryan" ke "Vio") dengan paragraf yang mengalir, dibungkus dalam kotak semi-transparan untuk efek dramatis.
+- **Musik Latar Interaktif**: Audio loop (`Cinnamon-Girl.mp3`) dengan tombol **Play/Pause** di pojok kanan bawah. Musik otomatis pause saat halaman tidak aktif untuk pengalaman yang ramah pengguna.
+- **Desain Responsif**: Menggunakan flexbox dan media queries implisit untuk tampilan optimal di desktop, tablet, dan mobile. Teks menggunakan font serif (Georgia) untuk nuansa klasik-romantis.
+- **Efek Visual**: Shadow pada teks, transisi hover pada tombol, dan overflow hidden untuk mencegah scroll horizontal yang tidak diinginkan.
 
-## Cara Menjalankan
+---
 
-1. Upload folder ini ke GitHub repository
-2. Hubungkan ke [vercel.com](https://vercel.com) untuk deployment otomatis
-3. Pastikan semua file di folder `assets/` sudah sesuai nama:
-   - `Bahlil.mp4` untuk video
-   - `DJ Gamelan Jawa Slow Full Bass - ...mp3` untuk musik
-   - `Bahlil 1.jpeg`, `2.jpeg`, `3.jpeg` untuk gambar dokumentasi
-
-Selamat menikmati kisah tokoh inspiratif ini!
+## 📂 Struktur Folder
+Proyek ini sangat sederhana dan bisa dijalankan dari satu folder saja. Berikut struktur minimal:
